@@ -23,7 +23,7 @@ defmodule Rl.MixProject do
         "apps/**/mix.exs": "mix do deps.get, deps.compile, compile",
         "mix.exs": "mix do deps.get, deps.compile, compile",
         "_build/**/*.beam": [module: Rl.Watcher.Beam],
-        "{apps,lib,config,test}/**/*.{erl,ex,exs,eex,xrl,yrl,hrl}": "mix test --stale"
+        "{apps,lib,config,test}/**/*.{erl,ex,exs,eex,xrl,yrl,hrl}": "mix compile"
       ]
     ]
   end
